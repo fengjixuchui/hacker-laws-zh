@@ -10,9 +10,12 @@
 
 喜欢点 **star** 、关注点 **watch** 、贡献点 **fork** 。翻译错漏之处，欢迎指正！
 
+招聘阿里前端，部门缺前端，双休，有兴趣的可以投递到我的邮箱，帮忙内推 stevexu.xq@alibaba-inc.com
+
 - [介绍](#%e4%bb%8b%e7%bb%8d)
 - [定律](#%e5%ae%9a%e5%be%8b)
   - [阿姆达尔定律 (Amdahl's Law)](#%e9%98%bf%e5%a7%86%e8%be%be%e5%b0%94%e5%ae%9a%e5%be%8b-amdahls-law)
+  - [破窗效应 (The Broken Windows Theory)](#%e7%a0%b4%e7%aa%97%e6%95%88%e5%ba%94-the-broken-windows-theory)
   - [布鲁克斯法则 (Brooks's Law)](#%e5%b8%83%e9%b2%81%e5%85%8b%e6%96%af%e6%b3%95%e5%88%99-brookss-law)
   - [康威定律 (Conway's Law)](#%e5%ba%b7%e5%a8%81%e5%ae%9a%e5%be%8b-conways-law)
   - [坎宁汉姆定律 (Cunningham's Law)](#%e5%9d%8e%e5%ae%81%e6%b1%89%e5%a7%86%e5%ae%9a%e5%be%8b-cunninghams-law)
@@ -22,7 +25,7 @@
   - [汉隆的剃刀（Hanlon's Razor）](#%e6%b1%89%e9%9a%86%e7%9a%84%e5%89%83%e5%88%80hanlons-razor)
   - [侯世达定律 (Hofstadter's Law)](#%e4%be%af%e4%b8%96%e8%be%be%e5%ae%9a%e5%be%8b-hofstadters-law)
   - [哈伯特定律 (Hutber's Law)](#%e5%93%88%e4%bc%af%e7%89%b9%e5%ae%9a%e5%be%8b-hutbers-law)
-  - [技术成熟度曲线 (The Hype Cycle & Amara's Law)](#%e6%8a%80%e6%9c%af%e6%88%90%e7%86%9f%e5%ba%a6%e6%9b%b2%e7%ba%bf-the-hype-cycle--amaras-law)
+  - [技术成熟度曲线 (The Hype Cycle or Amara's Law)](#%e6%8a%80%e6%9c%af%e6%88%90%e7%86%9f%e5%ba%a6%e6%9b%b2%e7%ba%bf-the-hype-cycle-or-amaras-law)
   - [隐式接口定律 (Hyrum's Law or The Law of Implicit Interfaces)](#%e9%9a%90%e5%bc%8f%e6%8e%a5%e5%8f%a3%e5%ae%9a%e5%be%8b-hyrums-law-or-the-law-of-implicit-interfaces)
   - [梅特卡夫定律 (Metcalfe's Law)](#%e6%a2%85%e7%89%b9%e5%8d%a1%e5%a4%ab%e5%ae%9a%e5%be%8b-metcalfes-law)
   - [摩尔定律 (Moore's Law)](#%e6%91%a9%e5%b0%94%e5%ae%9a%e5%be%8b-moores-law)
@@ -90,6 +93,25 @@ _(图片来源: By Daniels220 at English Wikipedia, Creative Commons Attribution
 - [布鲁克斯法则](#%E5%B8%83%E9%B2%81%E5%85%8B%E6%96%AF%E6%B3%95%E5%88%99-brookss-law)
 - [摩尔定律](#%E6%91%A9%E5%B0%94%E5%AE%9A%E5%BE%8B-moores-law)
 
+### 破窗效应 (The Broken Windows Theory)
+
+- [英文维基百科](https://en.wikipedia.org/wiki/Broken_windows_theory)
+- [中文维基百科](https://zh.wikipedia.org/wiki/%E7%A0%B4%E7%AA%97%E6%95%88%E5%BA%94)
+
+在破窗理论中认为，一些明显的犯罪迹象(或缺乏环保意识)会导致进一步的、更严重的犯罪(或环境的进一步恶化)。
+
+破窗理论已应用于软件开发中，它表明劣质代码(或 [Technical Debt](#TODO))可能会影响后续优化的效率，从而进一步造成代码劣化；随着时间的推移，这种效应将会导致代码质量大幅下降。
+
+参见：
+
+- [Technical Debt](#TODO)
+
+例子：
+
+- [《程序员修炼之道：软件熵》(The Pragmatic Programming: Software Entropy)](https://pragprog.com/the-pragmatic-programmer/extracts/software-entropy)
+- [《Coding Horror：破窗效应》(Coding Horror: The Broken Window Theory)](https://blog.codinghorror.com/the-broken-window-theory/)
+- [《开源：编程之乐 - 破窗效应》(OpenSource: Joy of Programming - The Broken Window Theory)](https://opensourceforu.com/2011/05/joy-of-programming-broken-window-theory/)
+
 ### 布鲁克斯法则 (Brooks's Law)
 
 - [英文维基百科](https://en.m.wikipedia.org/wiki/Brooks%27s_law)
@@ -124,12 +146,11 @@ _(图片来源: By Daniels220 at English Wikipedia, Creative Commons Attribution
 
 > 在网络上想得到正确答案的最好方法不是提问题，而是发布一个错误的答案。
 
-据史蒂芬·麦克基迪说，沃德·坎宁汉姆早在 20 世纪 80 年代早期的时候建议他，在互联网上获得正确答案的最好方法不是提问题，而是发布一个错误的答案。麦克基迪称这为坎宁汉姆定律，而坎宁汉姆不以为然，并觉得这是“错误的引用”。最初这条定律只是用于描述 Usenet 上的社交行为，但后来也渐渐用于其他的在线社区（如 Wikipedia、Reddit、Twitter、Facebook等）。
+据史蒂芬·麦克基迪说，沃德·坎宁汉姆早在 20 世纪 80 年代早期的时候建议他，在互联网上获得正确答案的最好方法不是提问题，而是发布一个错误的答案。麦克基迪称这为坎宁汉姆定律，而坎宁汉姆不以为然，并觉得这是“错误的引用”。最初这条定律只是用于描述 Usenet 上的社交行为，但后来也渐渐用于其他的在线社区（如 Wikipedia、Reddit、Twitter、Facebook 等）。
 
 参见：
 
 - [XKCD 386: "Duty Calls"](https://xkcd.com/386/)
-
 
 ### 邓巴数字 (Dunbar's Number)
 
@@ -145,11 +166,11 @@ _(图片来源: By Daniels220 at English Wikipedia, Creative Commons Attribution
 
 ### 盖尔定律 (Gall's Law)
 
-- [英文维基百科](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law)
+- [英文维基百科](<https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law>)
 
 > 一个切实可行的复杂系统势必是从一个切实可行的简单系统发展而来的。从头开始设计的复杂系统根本不切实可行，无法修修补补让它切实可行。你必须由一个切实可行的简单系统重新开始。
 >
-> [约翰·盖尔](https://en.wikipedia.org/wiki/John_Gall_(author)) (John Gall)
+> [约翰·盖尔](<https://en.wikipedia.org/wiki/John_Gall_(author)>) (John Gall)
 
 盖尔定律说明了设计高度复杂的系统很可能会失败。它们很难一蹴而就，更多是从简单的系统逐渐演变而来。
 
@@ -182,6 +203,7 @@ _(图片来源: By Daniels220 at English Wikipedia, Creative Commons Attribution
 - 由 commits 的行数来评价开发人员的表现，从而导致了不合理的代码库扩增。
 
 参见
+
 - [古德哈特定律：错误的测量如何导致不道德的行为](https://coffeeandjunk.com/goodharts-campbells-law/)
 - [呆伯特与无 bug 软件](https://dilbert.com/strip/1995-11-13)
 
@@ -225,7 +247,7 @@ _(图片来源: By Daniels220 at English Wikipedia, Creative Commons Attribution
 
 例如，某个端点的响应延迟减少，就可能导致请求流中的吞吐量和容量问题进一步增加，并影响到另一个完全不同的子系统。
 
-### 技术成熟度曲线 (The Hype Cycle & Amara's Law)
+### 技术成熟度曲线 (The Hype Cycle or Amara's Law)
 
 - [英文维基百科](https://en.wikipedia.org/wiki/Hype_cycle)
 - [中文维基百科](https://zh.wikipedia.org/wiki/%E6%8A%80%E6%9C%AF%E6%88%90%E7%86%9F%E5%BA%A6%E6%9B%B2%E7%BA%BF)
@@ -267,6 +289,7 @@ _(图片来源: By Jeremykemp at English Wikipedia, CC BY-SA 3.0, https://common
 这个定律基于一个系统中可能的连接对数量，并且与[里德定律](#%e9%87%8c%e5%be%b7%e5%ae%9a%e5%be%8b-reeds-law)十分相近。奥德利兹科 (Odlyzko) 和其他人认为，里德定律和梅特卡夫定律夸大了系统本身的价值，因为它们没有考虑到网络效应中人类认知的限制。
 
 参见:
+
 - [里德定律](#%e9%87%8c%e5%be%b7%e5%ae%9a%e5%be%8b-reeds-law)
 - [邓巴数字](#%e9%82%93%e5%b7%b4%e6%95%b0%e5%ad%97-dunbars-number)
 
@@ -354,6 +377,7 @@ _(图片来源: By Jeremykemp at English Wikipedia, CC BY-SA 3.0, https://common
 这一定律基于图论，图论中的效用与可能的子组数量呈正比，并且该增长速度会比参与者的数量和可能的连接对数量要快。奥德利兹科 (Odlyzko) 和其他人认为，里德定律夸大了系统本身的价值，因为它们没有考虑到网络效应中人类认知的限制。
 
 参见:
+
 - [梅特卡夫定律 (Metcalfe's Law)](#%e6%a2%85%e7%89%b9%e5%8d%a1%e5%a4%ab%e5%ae%9a%e5%be%8b-metcalfes-law)
 - [邓巴数字](#%e9%82%93%e5%b7%b4%e6%95%b0%e5%ad%97-dunbars-number)
 
@@ -427,8 +451,8 @@ Spotify 模型还普及了部落、行会以及章节的概念，这些是组织
 >
 > 0. 语义 (Semantics)
 > 1. 语法 (Syntax)
-> 2. 词法 (Lexical syntax)
-> 3. 注释语法 (Lexical syntax of comments)
+> 1. 词法 (Lexical syntax)
+> 1. 注释语法 (Lexical syntax of comments)
 >
 > （简而言之，在语义上花费一个小时，就要在注释语法上花费八个小时）。
 
@@ -691,7 +715,7 @@ KISS 原则指明了如果大多数的系统能够保持简单而非复杂化，
 - 运输成本为零
 - 网络为同构的
 
-前 4 各项目由 [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) 和 [Tom Lyon](https://twitter.com/aka_pugs) 于 1991 左右提出。并被 [James Gosling](https://en.wikipedia.org/wiki/James_Gosling) 首次归类于“网络计算的谬误”；后 [L. Peter Deutsch](https://en.wikipedia.org/wiki/L._Peter_Deutsch) 添加了第5、6、7个谬误；90 年代末，Gosling 添加了最后一个谬误。
+前 4 各项目由 [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) 和 [Tom Lyon](https://twitter.com/aka_pugs) 于 1991 左右提出。并被 [James Gosling](https://en.wikipedia.org/wiki/James_Gosling) 首次归类于“网络计算的谬误”；后 [L. Peter Deutsch](https://en.wikipedia.org/wiki/L._Peter_Deutsch) 添加了第 5、6、7 个谬误；90 年代末，Gosling 添加了最后一个谬误。
 
 这些内容受到了 [太阳微系统 (Sun Microsystems)](https://en.wikipedia.org/wiki/Sun_Microsystems) 内部当时所发生的事情的启发。
 
@@ -700,7 +724,7 @@ KISS 原则指明了如果大多数的系统能够保持简单而非复杂化，
 参见:
 
 - [寻找分布式计算的谬误（第一部分） - Vaidehi Joshi
- on Medium](https://medium.com/baseds/foraging-for-the-fallacies-of-distributed-computing-part-1-1b35c3b85b53)
+  on Medium](https://medium.com/baseds/foraging-for-the-fallacies-of-distributed-computing-part-1-1b35c3b85b53)
 - [十年后，德意志 (Peter Deutsch) 的谬论](http://java.sys-con.com/node/38665)
 
 ## 阅读清单
@@ -718,3 +742,4 @@ KISS 原则指明了如果大多数的系统能够保持简单而非复杂化，
 嗨！如果你读到这里，点击了一个我尚未编写的主题链接，我感到很抱歉。这是正在进行中的工作！
 
 随意给 [hacker-laws](https://github.com/dwmkerr/hacker-laws) 和 [hacker-laws-zh](https://github.com/nusr/hacker-laws-zh) 提 [Issue](https://github.com/dwmkerr/hacker-laws/issues) 或者 [Pull Request](https://github.com/dwmkerr/hacker-laws/pulls)。
+
